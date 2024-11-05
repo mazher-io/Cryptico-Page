@@ -1,0 +1,129 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 4px 3%; /* Updated padding for better spacing */
+    margin: 10px auto; /* Center the navbar with auto margins */
+    max-width: 1340px; /* Optional: set a max-width for larger screens */
+    position: sticky;
+    top: 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+  }
+  
+  .logo {
+    width: max(10vw, 180px);
+    max-width: 170px; /* Limit max width for better appearance on larger screens */
+    cursor: pointer;
+  }
+  
+  .login,
+  .sign-up {
+    width: 135px; /* Use a consistent width for buttons */
+    height: 47px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: 550;
+  }
+  
+  .login {
+    border: 2px solid #ffffff;
+    color: white;
+  }
+  
+  .login:hover {
+    background: var(--button-background);
+    color: white;
+    font-size: 1.4em;
+    border: 2px solid #315cfd;
+  }
+  
+  .sign-up {
+    border: 0;
+    background-color: var(--button-background);
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .sign-up:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  .nav-right {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+  
+  @media (max-width: 900px) {
+    .Navbar {
+      margin: 10px 40px; /* Reduced margin for smaller screens */
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .logo {
+      width: max(15vw, 100px); /* Adjust logo size for small screens */
+    }
+    
+    .nav-right {
+      width: auto; /* Allow the nav-right to adjust dynamically */
+    }
+    
+    .login,
+    .sign-up {
+      width: 110px; /* Adjust button width for small screens */
+      height: 40px; /* Slightly smaller height for small screens */
+      font-size: 0.9em; /* Smaller font size for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Navbar {
+      padding: 4px 2%; /* Reduced padding for smaller screens */
+      margin: 10px 20px; /* More compact margins */
+    }
+  
+    .login,
+    .sign-up {
+      width: 100px; /* Further reduce button size for very small screens */
+      height: 35px; /* Adjust height for very small screens */
+      font-size: 0.85em; /* Smaller font size */
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .nav-right {
+      font-size: 10px; /* Smaller font for smaller devices */
+    }
+    
+    .logo {
+      width: max(20vw, 80px); /* Further reduce logo size for very small screens */
+    }
+  }
+  
+  /* Add styles for the scrolled state */
+  .Navbar.scrolled {
+    box-shadow: 0 17px 50px rgba(0, 0, 0, 0.2);
+    background-color: rgba(43, 49, 109, 0.9);
+    animation: fadeIn 0.5s ease forwards;
+    border-radius: 20px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with fully transparent */
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1; /* Fade to fully visible */
+      transform: translateY(0);
+      top: 15px;
+    }
+  }
+  

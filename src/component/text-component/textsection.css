@@ -1,0 +1,27 @@
+.button {
+    display: inline-block;
+    padding: 6px 37px;
+    background-color: #5e2bff; /* Default color, overridden by inline styles */
+    color: #fff; /* Default text color, overridden by inline styles */
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px;
+    
+  }
+
+
+  
+  /* Media queries for responsive design */
+  @media (max-width: 768px) {
+    .button {
+      padding: 4px 20px; /* Reduce padding on smaller screens */
+      font-size: 11px;    /* Adjust font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button {
+      padding: 2px 20px; /* Further reduce padding */
+      font-size: 10px;   /* Adjust font size */
+    }
+  }
