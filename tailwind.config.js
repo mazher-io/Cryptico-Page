@@ -12,6 +12,7 @@ export default {
         'custom-blue-1': 'rgba(103, 132, 255, 0.2)',
         'custom-blue-2': 'rgba(103, 132, 255, 0.1)',
         'custom-radial': 'radial-gradient(circle at 50% 50%, rgba(103, 132, 255, 0.15) 0%, transparent 70%)',
+        'Black': '#000000'
         
       },
     },
