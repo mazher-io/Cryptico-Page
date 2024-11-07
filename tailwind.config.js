@@ -12,11 +12,15 @@ export default {
         'custom-blue-1': 'rgba(103, 132, 255, 0.2)',
         'custom-blue-2': 'rgba(103, 132, 255, 0.1)',
         'custom-radial': 'radial-gradient(circle at 50% 50%, rgba(103, 132, 255, 0.15) 0%, transparent 70%)',
+<<<<<<< HEAD
         "Footer": "#292f66",
       },
       fontFamily: {
         // Adding the Poppins font family
         sans: ['Syne', 'sans-serif'],
+=======
+        'custom-red': '#506932' ,
+>>>>>>> 0829f83eeea2baacf089b5cefa9e3668da684677
         
       },
     },
