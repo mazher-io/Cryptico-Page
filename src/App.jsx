@@ -1,8 +1,10 @@
 import Companies from './component/companies/Companies'
+import Cta from './component/cta/cta'
 import Features from './component/Features/Features'
 import Herosection from './component/HeroSection/Herosection'
 import Pricing from './component/Pricing/Pricing'
 import Text from './component/text-component/text'
+import Footer from './Navbar + footer/Footer/Footer'
 import Navbar from './Navbar + footer/Navbar/Navbar'
 
 const App = () => {
@@ -14,6 +16,8 @@ const App = () => {
       <Text text="Features" headingText='Revolutionary Features'/>
       <Features />
       <Pricing />
+      <Cta />
+      <Footer />
     </div>
   )
 }
