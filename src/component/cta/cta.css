@@ -1,0 +1,143 @@
+.cta {
+    background-color: rgb(42 43 49 / 41%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-left: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border: 1px solid #849AAA85;
+    padding-right: 130px;
+}
+
+.left-sec {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.left-sec h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+    line-height: 1.2em;
+    margin-bottom: 12px;
+}
+
+.left-sec p {
+    color: #D3D3D3; /* Light grey to ensure readability on dark background */
+    font-size: 14px; /* Adjust font size as desired */
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.left-sec button {
+    background-color: #5063F0; /* Matches your preferred button color */
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 24px;
+}
+
+.left-sec button:hover {
+    background-color: #4052D0; /* Slightly darker shade for hover effect */
+    transform: scale(1.05); /* Subtle scaling effect on hover */
+}
+
+.right-sec {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#bottone1 {
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    border-radius: 9px;
+    background: #475be8;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#bottone1:hover {
+    box-shadow: 7px 5px 56px -14px #475be8;
+}
+
+#bottone1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #475be8;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    .cta {
+        flex-direction: column; /* Stack the sections vertically */
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .left-sec {
+        text-align: center; /* Center the text */
+    }
+
+    .left-sec h1, .left-sec p {
+        margin: 0; /* Remove margin for better spacing */
+    }
+
+    .left-sec button {
+        margin-top: 20px; /* Adjust margin for button */
+    }
+
+    /* Optional: Style for right-sec if needed */
+    .right-sec {
+        margin-top: 20px; /* Add space between left and right sections */
+    }
+    .left-sec h1{
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .left-sec h1{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .left-sec p {
+      font-size: 10px;
+    }
+    #bottone1 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px){
+    .left-sec h1{
+        font-size: 18px;
+       
+    }
+    .left-sec p {
+        font-size: 7px;
+      }
+}

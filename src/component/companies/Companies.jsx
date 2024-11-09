@@ -9,13 +9,13 @@ const Companies = () => {
   return ( 
     <div className="flex items-center justify-center flex-col">
         <p className="text-white">Trusted by the fastest growing companies</p>
-        <div className="flex items-center pt-8 gap-8 pb-10">
-            <img className='w-[15rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert' src={img1} alt="Company 1" />
-            <img className='w-[15rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert' src={img2} alt="Company 2" />
-            <img className='w-[15rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert' src={img3} alt="Company 3" />
-            <img className='w-[15rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert' src={img4} alt="Company 4" />
-            <img className='w-[15rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert' src={img5} alt="Company 5" />
-            <img className='w-[15rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert' src={img6} alt="Company 6" />
+        <div className="flex flex-wrap items-center pt-8 gap-8 pb-10 justify-center">
+            <img className='w-[8rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert sm:w-[10rem] md:w-[15rem]' src={img1} alt="Company 1" />
+            <img className='w-[8rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert sm:w-[10rem] md:w-[15rem]' src={img2} alt="Company 2" />
+            <img className='w-[8rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert sm:w-[10rem] md:w-[15rem]' src={img3} alt="Company 3" />
+            <img className='w-[8rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert sm:w-[10rem] md:w-[15rem]' src={img4} alt="Company 4" />
+            <img className='w-[8rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert sm:w-[10rem] md:w-[15rem]' src={img5} alt="Company 5" />
+            <img className='w-[8rem] transition-all duration-300 hover:filter hover:brightness-0 hover:saturate-100 hover:invert sm:w-[10rem] md:w-[15rem]' src={img6} alt="Company 6" />
         </div>
     </div>
   );
