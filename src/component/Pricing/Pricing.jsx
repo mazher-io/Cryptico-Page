@@ -68,7 +68,7 @@ const PricingCard = ({ plan }) => {
           <li key={index}>{feature}</li>
         ))}
       </ul>
-      <button className="cta-button">{cta}</button>
+      <button className="cta-button" onClick={() => window.location.href = 'https://crypticoo.netlify.app'}>{cta}</button>
       <p className="comparison">{comparison}</p>
     </div>
   );

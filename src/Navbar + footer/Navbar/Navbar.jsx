@@ -29,8 +29,8 @@ const Navbar = () => {
             <img className='logo'src={logo} alt="" />
         </div>
         <div className='nav-right'>
-            <button className='login'>Login</button>
-            <button className='sign-up'>Sign up</button>
+            <button className='login' onClick={() => window.location.href = 'https://crypticoo.netlify.app'}>Login</button>
+            <button className='sign-up' onClick={() => window.location.href = 'https://crypticoo.netlify.app'}>Sign up</button>
         </div>
       
     </div>

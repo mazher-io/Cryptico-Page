@@ -109,6 +109,7 @@
 @media (max-width: 430px) {
   .nav-right {
     font-size: 10px; /* Smaller font for smaller devices */
+    gap: 7px;
   }
 
   .logo {
@@ -117,10 +118,12 @@
 
   .login,
   .sign-up {
-    width: 90px; /* Make buttons even smaller on very small screens */
+    width: 80px; /* Make buttons even smaller on very small screens */
     height: 30px; /* Reduce height further */
     font-size: 0.75em; /* Even smaller font size */
+    gap: 0px;
   }
+
 }
 
 
@@ -130,8 +133,8 @@
   animation: fadeIn 0.5s ease forwards;
   
   border-radius: 90px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 
@@ -141,8 +144,8 @@
     margin: 0px 8px; /* More compact margins */
   }
   .Navbar.scrolled{
-    padding-right: 15px;
-    padding-left: 25px;
+    padding-right: 10px;
+    padding-left: 20px;
   }
   .login,
   .sign-up {
