@@ -1,8 +1,18 @@
 import logo from '../../assets/logo.svg'
+import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
-      <div>
+      <motion.div
+      whileInView={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0.5 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.3,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      viewport={{ once: true }} // Prevents re-triggering when scrolling back
+    >
         <footer className="bg-white mt-[10rem]" style={{ backgroundColor: '#1a2130' }}>
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div className="md:flex md:justify-between">
@@ -79,7 +89,7 @@ const Footer = () => {
             </div>
           </div>
         </footer>
-      </div>
+      </motion.div>
     );
   };
   
