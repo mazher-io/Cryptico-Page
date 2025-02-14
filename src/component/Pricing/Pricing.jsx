@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import Text from '../text-component/text';
+import Text from '../text-component/Text';
 import './Pricing.css';
 
 const pricingPlans = [
