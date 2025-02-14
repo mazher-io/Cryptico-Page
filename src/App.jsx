@@ -1,5 +1,5 @@
 import Companies from './component/companies/Companies'
-import Cta from './component/cta/cta'
+import Cta from './component/cta/Cta';
 import Features from './component/Features/Features'
 import Herosection from './component/HeroSection/Herosection'
 import Pricing from './component/Pricing/Pricing'
