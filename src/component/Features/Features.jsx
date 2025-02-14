@@ -4,9 +4,20 @@ import svg3 from "../../assets/icon3.svg";
 import svg4 from "../../assets/icon4.svg";
 import svg5 from "../../assets/icon5.svg";
 import svg6 from "../../assets/icon6.svg";
+import { motion } from "framer-motion";
 
 const Features = () => {
   return (
+    <motion.div
+      whileInView={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0.8 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      viewport={{ once: true }} // Prevents re-triggering when scrolling back
+    >
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-4 sm:mx-10 lg:mx-20 my-16">
       {/* Card Component */}
       {[
@@ -80,6 +91,7 @@ const Features = () => {
         </div>
       ))}
     </div>
+    </motion.div>
   );
 };
 
