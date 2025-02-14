@@ -3,7 +3,7 @@ import Cta from './component/cta/Cta';
 import Features from './component/Features/Features'
 import Herosection from './component/HeroSection/Herosection'
 import Pricing from './component/Pricing/Pricing'
-import Text from './component/text-component/Text';
+import Text from './component/text-component/text.jsx';
 
 import Footer from './Navbar + footer/Footer/Footer'
 import Navbar from './Navbar + footer/Navbar/Navbar'
