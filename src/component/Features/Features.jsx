@@ -9,12 +9,15 @@ import { motion } from "framer-motion";
 const Features = () => {
   return (
     <motion.div
-      whileInView={{ opacity: 1, scale: 1 }}
-      initial={{ opacity: 0, scale: 0.8 }}
+      style={{ willChange: "transform, opacity" }}
+      initial={{ opacity: 0, translateY: 50 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
       transition={{
-        duration: 0.8,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.01],
+        duration: 0.5,
+        delay: 0.2,
+        ease: [0.25, 0.1, 0.25, 1], // Use a simpler easing curve
+
+        
       }}
       viewport={{ once: true }} // Prevents re-triggering when scrolling back
     >
