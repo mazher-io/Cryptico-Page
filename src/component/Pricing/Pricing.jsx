@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Text from '../text-component/Text';
 import './Pricing.css';
+import { motion } from "framer-motion";
 
 const pricingPlans = [
   {
@@ -122,6 +123,19 @@ const Pricing = () => {
   }, []);
 
   return (
+    <motion.div
+      style={{ willChange: "transform, opacity" }}
+      initial={{ opacity: 0, translateY: 50 }}
+      whileInView={{ opacity: 1, translateY: 0 }}
+      transition={{
+        duration: 0.5,
+        delay: 0.2,
+        ease: [0.25, 0.1, 0.25, 1], // Use a simpler easing curve
+
+        
+      }}
+      viewport={{ once: true }} // Prevents re-triggering when scrolling back
+    >
     <div className="pricing-container">
       <Text text="Pricing" headingText="Revolutionary Pricing" />
       <div className="pricing-cards">
@@ -130,6 +144,7 @@ const Pricing = () => {
         ))}
       </div>
     </div>
+    </motion.div>
   );
 };
 
