@@ -1,7 +1,19 @@
 
 import videoSrc from "../../assets/original-69e49e0ddb3f31adf771c19f91f22c12.mp4";
+import { motion } from "framer-motion";
+
 const Herosection = () => {
   return (
+    <motion.div
+      whileInView={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0.8 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      viewport={{ once: true }} // Prevents re-triggering when scrolling back
+    >
     <div className="flex flex-col items-center mt-[30px] ">
       <h1 className="text-white text-center text-[32px] sm:text-[40px] md:text-[60px] lg:text-[50px] leading-[131.99%] font-bold">
         Manage Your
@@ -44,6 +56,7 @@ const Herosection = () => {
         </video>
       </div>
     </div>
+    </motion.div>
   );
 };
 
